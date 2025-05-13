@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajasthani Pickles | Taste of Tradition</title>
+
+  <!-- Google Fonts & FontAwesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0f1a1c0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌶️ Masi's Achar Ghar</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>🌶️ Taste the Tradition of Rajasthan 🧄</h1>
+        <p>Experience the burst of flavor in every spoon. Homemade. Hygienic. Heavenly.</p>
+        <a href="#products" class="btn">🛍️ Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="images.jpeg" alt="Delicious Rajasthani Food">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <h2>🛒 Our Pickles</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images (1).jpeg" alt="Mango Pickle">
+        <h3><i class="fas fa-jar"></i> Mango Pickle</h3>
+        <p>Rs. 299</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images (2).jpeg" alt="Lemon Pickle">
+        <h3><i class="fas fa-lemon"></i> Lemon Pickle</h3>
+        <p>Rs. 249</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Ker-Sangri-2-3.jpg" alt="Ker Sangri Pickle">
+        <h3><i class="fas fa-seedling"></i> Ker Sangri Pickle</h3>
+        <p>Rs. 199</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images (3).jpeg" alt="Mirchi Pickle">
+        <h3><i class="fas fa-pepper-hot"></i> Mirchi Pickle</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>👵 About Us</h2>
+    <p>
+      From the royal kitchens of Rajasthan to your plate — we bring age-old pickle recipes made with love,
+      sun-dried spices, and grandmother’s magic.
+    </p>
+    <img src="IMG_5987_edited-1.jpg" alt="Pickle Making" class="about-img">
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>📬 Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-socials">
+      <p>Or reach us on:</p>
+    <a href="https://wa.me/+923272745022" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a> |
+<a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+<a href="tel:+923272745022"><i class="fas fa-phone"></i> Call Us</a>
+
+    </div>
+  </section>
+<section id="offers" class="section offers">
+  <h2>🎁 Special Offers</h2>
+  <div class="offer-banner">
+    <div class="offer-text">
+      <h3>Buy 2 jar, and get one 250 gram jar free!</h3>
+      <p>Limited time offer on all Desi pickles. Perfect for gifting or spicing up your meals!</p>
+      <a href="#products" class="btn-offer">Grab the Deal</a>
+    </div>
+    <div class="offer-img">
+      <img src="DALL·E 2025-05-13 20.59.27 - A vibrant and colorful poster advertising traditional Rajasthani pickles (achaar). The poster includes clay or glass jars filled with spicy pickles su.webp" alt="Special Pickle Offer">
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 <strong>Rajasthani Achar Ghar</strong> | Handmade with ❤️ in Rajasthan</p>
+    <div style="height: 4px; background: linear-gradient(to right, maroon, orange, yellow);"></div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    let cartCount = 0;
+    function addToCart() {
+      cartCount++;
+      document.getElementById("cart-count").textContent = cartCount;
+      alert("Item added to cart!");
+    }
+  </script>
+
+</body>
+</html>
